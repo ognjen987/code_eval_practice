@@ -1,17 +1,15 @@
 <html>
 <head>
 <script>
-
-var line = "ognjen@miljic.com"
-var checkMailformat = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;  
-if(line.match(checkMailformat))  
-{  
-console.log("true");  
-}  
-else  
-{  
-console.log("false");   
+var line = 2;
+var binaryNum = "";
+        
+while(line > 0){
+	binaryNum = line%2 +binaryNum;
+	line = Math.floor(line/2);
 }
+
+console.log(binaryNum);
 </script>
 
 </head>
