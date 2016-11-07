@@ -1,15 +1,9 @@
 <html>
 <head>
 <script>
-var line = 2;
-var binaryNum = "";
-        
-while(line > 0){
-	binaryNum = line%2 +binaryNum;
-	line = Math.floor(line/2);
-}
-
-console.log(binaryNum);
+var line = 10;
+var toBin = parseInt(line, 10).toString(2);
+console.log((toBin.match(new RegExp("1", "g")) || []).length);
 </script>
 
 </head>
